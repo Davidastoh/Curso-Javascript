@@ -1,7 +1,7 @@
 # INTRODUCCION
 - [Comentarios](#comentarios) 
-- [La_consola](#La_Consola) 
-- [Naiming](#Naiming) 
+- [Consola](#consola) 
+- [Naiming](#naiming) 
   
 ## Comentarios
 Es la parte dentro de mi archivo de codigo que no es leido ni ejecutado por el interprete de `js`.
@@ -70,3 +70,51 @@ if(edad<= 18){
 ## Interfaz de linea de comandos
 > CLI Editor de texto que trabaja o funciona por la terminal ()
 > GUI Posee interfaz grafica
+
+#### 3. Tablas
+Este tipo de mensaje por consola nos muestra la infromacion en una tabla.
+Solo formateara a los datos de tipo `array` y `objetos`
+```js
+lenguajes=[
+   {nombre:"javascript",extension:".js"},
+   {nombre:"python",extension:".py"},
+   {nombre:"php",extension:".php"}
+]
+```
+[para ver los ejemplos has clic aqui](consola.js)
+
+## Naiming
+ Es la tecnica para nombrar variables, funciones  y clases dentro de un lenguaje de progracion.
+ Las variables tienen reglas muy especificas que debemos seguir a la hora de designar sus nombres.
+ ### Usos incorrectos
+ 
+  - Debemos usaer nombres que expliquen que aporta esa variable a nuestro codigo.
+  - No se pueden usar espacios.
+>[!WARNING]
+```js
+#Incorrecto
+con espacio=45
+```
+- No usar un numero delante
+>[!WARNING]
+```js
+#Incorrecto
+1numero=45
+```
+- Evitar simbolos y `snake_case`
+>[!WARNING]
+```js
+#Incorrecto
+dame$=45
+#Incorrecto
+con_guines_bajos="no es coorrecto"
+```
+
+### Usos correctos
+- Debemos usar nombres que expliquen que aporta esta varibale a nuestro codigo.
+- usar `CamelCase`
+> [!TIP]
+> ```js
+> #Correcto
+> edadAlumno=45
+```
