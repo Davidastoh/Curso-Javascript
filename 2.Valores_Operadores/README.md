@@ -55,4 +55,29 @@ Cuando javascript realiza operaciones con numeros enteros el resultado siempre s
 
 **Es nuestra responsabilidad como programadores hacer el uso de los decimales con aproximaciones para evitar errores.**
 
+```js
+//dato numerico de tipo entero
+//entero positivo
+20
+//entero negativo
+-20
+//decimal positivo
+2.7
+//decimal negativo
+-2.7
+//notacion cientifica
+2.876e8
+//notacion cientifica negativa
+-2.876e8
+```
+
+#### Nomeros especiales
+En javascript existen tres valores de tipo numeros especiales que se consideran un dato primitivo numerico de tipo especial
+```js
+Infinity
+- Infinity
+NaN
+//Cuando el resultado de una operacion es matematicamente imposible.
+````
+
 
