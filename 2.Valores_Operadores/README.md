@@ -78,6 +78,8 @@ Infinity
 - Infinity
 NaN
 //Cuando el resultado de una operacion es matematicamente imposible.
-````
+```
+### Aritmetica (Operadores aritmeticos)
+
 
 
