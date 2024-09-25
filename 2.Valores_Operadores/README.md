@@ -79,7 +79,22 @@ Infinity
 NaN
 //Cuando el resultado de una operacion es matematicamente imposible.
 ```
-### Aritmetica (Operadores aritmeticos).
+#### Aritmetica (Operadores aritmeticos).
+par esto tenemos los operadores basicos de la aritmetica
+```js
+- suma (+)
+- resta (-)
+- multiplicacion (*)
+- division (/)
+- potenciacion (**)
+- modulo (%)
+- incremento (++)
+- decremento (--)
+```
+** Podemos agrupar operaciones con parentesis () las operaciones que este entre los parentesis **
+
+consulta el 
+
 
 
 
