@@ -1,10 +1,14 @@
 # VALORES, TIPOS Y OPERADORES
 ## Indice
-- [Tipos de datos o valores](#datos-y-valores)
-- tipos (tipos de datos)
-- operadores
-
-## Datos y valores
+- [Valores, Tipo y Operadores](#valores-tipos-y-operadores)
+- [Valores](#valores)
+- [Datos Primitivos](#datos-primitivos)
+- [Numeros(Number)](#--numeros-numbers)
+- [Aritmetica](#aritmetica-operadores-aritmeticos)
+- [Cadenas](#cadenas)
+- [Concatenacion](#concatenacion)
+- [Plantillas literales](#plantillas-literales)
+## valores
 Imagina un mar de bits.
 Una computadora moderna tiene mas de 100 mil millones de bits almacenadas en su `memoria de trabajo` o `memoria principal` o `memoria volatil` o `ram`
 <!-- desbordamiento de pila -->
@@ -92,8 +96,81 @@ par esto tenemos los operadores basicos de la aritmetica
 - decremento (--)
 ```
 ** Podemos agrupar operaciones con parentesis () las operaciones que este entre los parentesis **
+consulta los archivos de operadores [aqui](.Operadores.js) ve los ejercicios [aqui](.Operadores.js)
 
-consulta el 
+#### Cadenas 
+El siguiente tipo de dato primitivo es la `cadena` - `string`.
+¿Para que sean las cadenas en javascript?
+- Para reprensentar textos
+- Se escribe encerrando su contenido entre comillas:
+```js
+//Cadenas con contenido
+"Soy un texto" //comillas dobles
+'tambien soy un texto'//comillas simples
+`yo tambien soy`//acento grave
+
+//Cadenas vacias
+""
+''
+``
+```
+**Problema** - Como reprensentamos un texto entre comillas para hacer el uso de comillas dentro del contenido de una cadena podemos seguir las siguientes recomendaciones:
+```js
+//Si nuestro texto tiene que estar entre commilas siemples 
+"'este texto se muestra entre comillas simples'"
+//Si nuestro texto tiene que estar entre commilas dobles
+'"este texto se muestra entre comillas simples"'
+//Si nuestro texto tiene que estar entre commilas dobles como siemples 
+`'este texto estan en comillas simples',"este texto esta en comillas dobles"`
+```
+otra manera de hacer lo antes mencionado uso de la barra invertida `\` como tambien conocida como `caracteres de escape` 
+Hacer uso de este caracter indica que el caracter posterior tendra un significado especial.
+```js
+"De este texto solo esta \"palabra\" estara en comillas"
+el acento grave se incorporo en ecma script 6, antes era con caracter de scape
+```
+**Problema** - deseamos agregar un salto de linea en nuestro texto
+```js
+//solucionamos este problema haciendo uso de los acentos graves
+`primera linea
+segunda linea`
+```
+
+Antes de la incorporacion de ecma script 6 en el uso de acentos graves `` se utilizaba el caracter de scape `\`
+
+```js
+"esta es mi primera linea \n y esta es la segunda linea 
+```
+
+**Problema** - Deseo tabular un texto
+```js
+`
+este texto no esta tabulado
+    este texto no esta tabulado
+`
+```
+Ahora tabularemos haciendo uso del caracter de scape
+```js
+`si tabular \t y tabulado`
+```
+#### Concatenacion 
+el unico operador aritmetico que puede ser usado por cadenas es el operador de suma (+) puede ser usado en dos o mas cadenas y pasa a llamarse operador de concatenacion, lo que realizar es unir cadenas en una sola.
+<!-- Si el simbolo mas esta entre dos cadenas es un operador de cincatenacion -->
+```js
+"Hola"+" "+"Mundo"
+```
+#### Plantillas literales
+las plantillas literadas mencionadas con el acento grave son usadas para mostrar textos literal, tambien nos permite ejecutar codigos javascript dentro de una plantilla literal el codigo o el resultado de este codigo seratransformado en un dato de tipo texto y se incluira en la pisicion en que se encuentre.
+Para hacer uso de esta funcionalidad debemos usar la siguiente expresion `${}`
+```js
+//Creando plantilla literal - template literals
+``
+//javascript dentro de una plantilla literal
+`La suma de 1+1 es ${1+1}`
+```
+>[!TIP]
+Se dice literal porque en el formato que codificamos sera mostrado de esa misma forma en la consola 
+
 
 
 
