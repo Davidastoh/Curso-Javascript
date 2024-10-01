@@ -8,6 +8,8 @@
 - [Cadenas](#cadenas)
 - [Concatenacion](#concatenacion)
 - [Plantillas literales](#plantillas-literales)
+- [Operadores unarios](#operadores-unarios)
+- [valores booleanos](#valores-booleanos)
 ## valores
 Imagina un mar de bits.
 Una computadora moderna tiene mas de 100 mil millones de bits almacenadas en su `memoria de trabajo` o `memoria principal` o `memoria volatil` o `ram`
@@ -171,6 +173,33 @@ Para hacer uso de esta funcionalidad debemos usar la siguiente expresion `${}`
 >[!TIP]
 Se dice literal porque en el formato que codificamos sera mostrado de esa misma forma en la consola 
 
+#### Operadores Unarios
+No todos los operadores son simbolos,matematicos, tambien existen operadores unarios que son aquellos que no tienen operandos, se escriben como palabras.
+
+Un ejemplo es el operador `Typeof`, este operador produce un valor de cadena que indica el tipo del valor que te proporcionamos
+
+`operadores binarios` se les conoce porque opera sobre dos valores`2*5`
+`operaador unario`porque trabaja con un solo valor 
+
+```js
+//Para poder ver su funcionalidas o el valor que genera  siempre debemos mostrar en un console
+console.log(typeof 5)
+```
+#### Valores booleanos
+Este tipo de dato primitivo es util cuando tengamos un valor que distinga solo entre dos posibilidades, como `si` y `no` o `Encendido` y `Apagado`
+Para este proposito, Javascript tiene un tipo de dato ` Booleano` que tiene solo dos valores `true` y `false`.
+
+**¿Que formas de producir valores booleanos tenemos?**
+1. **Usando valores de comparacion**
+los operadores de comparacion son los siguientes 
+- Mayor que (>).
+- Menor que (<).
+- Mayor o igual que (>=).
+- Menor o igual que (<=).
+- Igual a (==).
+- Estrictamente igual (===).
+- No es igual a (!=).
+2. 
 
 
 
