@@ -24,3 +24,19 @@ console.log((3+4+5)/(5+(6/2)))
 console.log((2+3+(10/2*5))/((3+4)*(4/2)))
 //8
 console.log(((3+(6/3)+8))/(4))
+
+
+//Crear una variable de numero y mostrar por terminar el numero sumado por 1
+num=10
+console.log("Incremento",++num)
+//Comparacion de tiempo de ejecucion
+console.time(`calcular`)
+num=3
+console.log(num,++num)
+console.timeEnd(`calcular`)
+
+console.timeEnd(`calcular`)
+num=3
+console.log(num++)
+console.log(num)
+console.timeEnd(`calcular`)

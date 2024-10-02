@@ -1,15 +1,19 @@
 # VALORES, TIPOS Y OPERADORES
 ## Indice
-- [Valores, Tipo y Operadores](#valores-tipos-y-operadores)
-- [Valores](#valores)
-- [Datos Primitivos](#datos-primitivos)
-- [Numeros(Number)](#--numeros-numbers)
-- [Aritmetica](#aritmetica-operadores-aritmeticos)
-- [Cadenas](#cadenas)
-- [Concatenacion](#concatenacion)
-- [Plantillas literales](#plantillas-literales)
-- [Operadores unarios](#operadores-unarios)
-- [valores booleanos](#valores-booleanos)
+- [VALORES, TIPOS Y OPERADORES](#valores-tipos-y-operadores)
+  - [Indice](#indice)
+  - [valores](#valores)
+  - [Valores](#valores-1)
+    - [Datos primitivos](#datos-primitivos)
+      - [- Numeros (numbers)](#--numeros-numbers)
+      - [Nomeros especiales](#nomeros-especiales)
+      - [Aritmetica (Operadores aritmeticos).](#aritmetica-operadores-aritmeticos)
+      - [Cadenas](#cadenas)
+      - [Concatenacion](#concatenacion)
+      - [Plantillas literales](#plantillas-literales)
+      - [Operadores Unarios](#operadores-unarios)
+      - [Valores booleanos](#valores-booleanos)
+      - [Operador ternario](#operador-ternario)
 ## valores
 Imagina un mar de bits.
 Una computadora moderna tiene mas de 100 mil millones de bits almacenadas en su `memoria de trabajo` o `memoria principal` o `memoria volatil` o `ram`
@@ -199,7 +203,32 @@ los operadores de comparacion son los siguientes
 - Igual a (==).
 - Estrictamente igual (===).
 - No es igual a (!=).
-2. 
+2. **Usando los Operadores Logicos**
+Javascript supera 3 operadores logicos 
+- And (Y) representacion e javascript `&&`.
+- Or (o) representacion en javascript `||`.
+- Not (no) representacion en js `!`
+**observacion** este es un operador unario que su funcion es invertir el valor que tiene a su derecha `!true` produce `false`
+>[!TIP]
+>**AND `&&` `??`** 
+- Si tenemos dos valores verdaderos devolvera el segundo valor verdadero, si tenemos un valor falso y uno verdadero devolvera el falso.
+
+>[!TIP]
+>**or `||`** 
+- Si tenemos dos valores verdaderos devolvera el primer valor verdadero, si tenemos un valor falso y uno falso devolvera el valor verdadero.
+
+3. **Usando el operador relacional**
+   
+Este operador compara sus valores y retorna un booleano como resultado , lo que evalua este operador es si un propiedad especifica se encuentra en un objeto.
+Evalua que si el primer valor que se encuentra a su izquierdad existe o farma parte del segundo valor que se encuentra a su derecha.
+```js
+"a" in ["a","e","i","O","u"]
+```
+#### Operador ternario
+Este operador trabaja con 3 valores 
+El primer valor es el que determinara si se muetysra el resto de valores.
+Eso quiere decir que si el primer valor es verdadero mostrara el segundo valor, y si el primer valor es falso mostrara el tercer valor.
+
 
 
 

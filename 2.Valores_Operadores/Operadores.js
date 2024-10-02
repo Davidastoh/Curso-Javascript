@@ -12,7 +12,15 @@ console.log("Potenciacion: ",2**3)
 //modulo 
 console.log("Modulo: ",9%4)
 //incremento (++)
+num=0
+console.log("Incremento",num++)
+console.log("Incremento",++num)
+console.log("Incremento",num)
 //decremento (--)
+num=2
+console.log("Decremento",num--)
+console.log("Decremento",--num)
+console.log("Decremento",num)
 
 /* Reailzar la operacion de sumar 4 y 10 y luego multiplica el resultado por 11*/
 //estamos haciendo uso de la agrupacion de operaciones
