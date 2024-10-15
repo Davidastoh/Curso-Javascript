@@ -86,4 +86,13 @@ El metodo es conocido como `Window` como el metodo de ventana, este metodo es un
   ```
   ### Contro de flujo historica
   ### Ejecucuion condicional
-  Hacemos uso de este control de flujo cuando tenemos distintos caminos o distintos mensajes que deseamos mostrar segun la condicion 
+  Hacemos uso de este control de flujo cuando tenemos distintos caminos o distintos mensajes que deseamos mostrar segun la condicion.
+  **Como creamos una condicion**
+  La ejecucion condicional se crea con la palabra reservada (keyword) `if` a continuacion de una `condicion` en llaves `{}` se escribira el cuerpo del codigo que deseo ejecutar en caso la condicion sea `verdad`
+  - **Condicion simple `if`**
+  ````js
+  let comparacion=5>4
+  if true {
+    prompt("Escribe tu nombre")
+  }
+  ```

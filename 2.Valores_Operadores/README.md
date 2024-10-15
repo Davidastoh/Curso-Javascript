@@ -26,7 +26,7 @@ cada valor tiene una funcionalid dsitinta puede ser un numero, un texto o una fu
 Cuando hablamos de tipos de datos en javascript nos referimos a su representacion binaria y al tipo de valor que usamos
 
 ### Datos primitivos
-Son aquellos datos que ya existen, no pueden ser creados, actualizados ni eliminados wsolo pueden ser llamados para el uso que deseamos darle. los datos primitivos son:
+Son aquellos datos que ya existen, no pueden ser creados, actualizados ni eliminados solo pueden ser llamados para el uso que deseamos darle. los datos primitivos son:
 
 #### - Numeros (numbers)
 Los valores de tipo numero, comoes de esperar son numeros, y en javascript se escribe o se hacer el llamado de este valor de la siguiente manera.
@@ -81,7 +81,7 @@ Cuando javascript realiza operaciones con numeros enteros el resultado siempre s
 -2.876e8
 ```
 
-#### Nomeros especiales
+#### Numeros especiales
 En javascript existen tres valores de tipo numeros especiales que se consideran un dato primitivo numerico de tipo especial
 ```js
 Infinity
@@ -215,7 +215,7 @@ Javascript supera 3 operadores logicos
 
 >[!TIP]
 >**or `||`** 
-- Si tenemos dos valores verdaderos devolvera el primer valor verdadero, si tenemos un valor falso y uno falso devolvera el valor verdadero.
+- Si tenemos dos valores verdaderos devolvera el primer valor verdadero, si tenemos un valor verdadero y uno falso devolvera el valor verdadero.
 
 3. **Usando el operador relacional**
    
@@ -226,7 +226,7 @@ Evalua que si el primer valor que se encuentra a su izquierdad existe o farma pa
 ```
 #### Operador ternario
 Este operador trabaja con 3 valores 
-El primer valor es el que determinara si se muetysra el resto de valores.
+El primer valor es el que determinara si se muestra el resto de valores.
 Eso quiere decir que si el primer valor es verdadero mostrara el segundo valor, y si el primer valor es falso mostrara el tercer valor.
 
 
