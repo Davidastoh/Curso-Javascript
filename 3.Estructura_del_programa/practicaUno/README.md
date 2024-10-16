@@ -8,6 +8,8 @@
 ### *1. Pedir al usuario dos numeros al realizar el producto de ambos determinar en una condicion de una sola linea si el resultado es mayor a 100.*
 
 ### *2. Pedir al usuario una contraseña que debera ser verificada en una condicion simple si es la contraseña correcta.*
+
 ### *3. Pedir al usuario un numero y determina si es un numero primo.*
+
 ## Recomendaciones 
 ### Solo podran usar una condicion simple con cuerpo o de una sola linea
