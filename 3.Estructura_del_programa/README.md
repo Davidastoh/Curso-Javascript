@@ -88,11 +88,38 @@ El metodo es conocido como `Window` como el metodo de ventana, este metodo es un
   ### Ejecucuion condicional
   Hacemos uso de este control de flujo cuando tenemos distintos caminos o distintos mensajes que deseamos mostrar segun la condicion.
   **Como creamos una condicion**
-  La ejecucion condicional se crea con la palabra reservada (keyword) `if` a continuacion de una `condicion` en llaves `{}` se escribira el cuerpo del codigo que deseo ejecutar en caso la condicion sea `verdad`
+  La ejecucion condicional se crea con la palabra reservada (keyword) `if` a continuacion de una `condicion` en llaves `{}` se escribira el cuerpo del codigo que deseo ejecutar en caso la condicion sea `verdad`.
+
   - **Condicion simple `if`**
   ````js
   let comparacion=5>4
   if true {
     prompt("Escribe tu nombre")
+  }
+  ```
+    - **Condicion simple `if` en una sola linea**
+  ``js
+  if (1+1==2) console.log("Es verdad");
+  ```
+- **Condicion de doble evaluacion `if else`**
+  Existen casos en los que tendremos que ejecutar un codigo si es verdad per tambien si es falso, ejecucion condicional de dos caminos.
+  ```js
+  let edadPersona = 16;
+  if (edadPersona>=18){
+    console.log("Eres mayor de edad");
+  } else {
+    console.log("Eres menor de edad");
+  }
+  ```
+  - **Condicion multiple `if` `else if`**
+  - Se utiliza cuando se tiene que evaluar y devolver varias opcciones o multiples respuestas
+  ````js
+  let total_compra=30
+  if (total_compra > 50 &&  total_compra < 100){
+    console.log(`Tiene un descuento del 10% ${total_compra*0.10}`)
+  }else if (total_compra > 100 && total_compra < 500){
+    console.log(`Tiene un descuento del 20%" ${total_compra*0.20}`)
+  } else{
+    console.log(`Tienes un descuento del 50% ${total_compra*0.50}`)
   }
   ```
