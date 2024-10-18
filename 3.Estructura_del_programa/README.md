@@ -123,3 +123,51 @@ El metodo es conocido como `Window` como el metodo de ventana, este metodo es un
     console.log(`Tienes un descuento del 50% ${total_compra*0.50}`)
   }
   ```
+
+### Bucles 
+Consideremos el siguiente problema problema:
+crear un programa que imprima los numeros del 1 al 12, una forma de hacerlo seria lo siguiente:
+
+```js
+console.log(1)
+console.log(2)
+console.log(3)  
+console.log(4)
+console.log(5)
+console.log(6)  
+console.log(7)
+console.log(8)
+console.log(9)  
+console.log(10)
+console.log(11)
+console.log(12)  
+```
+El ejemplo anterior es valido, pero la idea cuando programamos es hacer menos trabajo, con el ejercio anterior tendriamos problemas si deseamos mostrar tosos los numeros menor a 1000.
+
+Necesitamos una manera de ejcutar un fragmento de codigos multiples veces. a esta forma de control de flujo se llama `bucle`.
+para crear un bucle tenemos dos formas de hacerlo 
+1. `while` - Para hacer uso de este bucle primero debemos usar la palabra clave `while` este a su vez el if debera tener una condicion sea falsa no sera ejecutado, al igual que el if luego de darle la condicion crearemos el `cuerpo` donde escribirimos el codigo que deseamos ejecutar.
+```js
+let numero = 1;
+while (numero <= 1000) {
+    console.log(numero);
+    numero++;
+}
+
+while (true){
+  console.log("Hola")
+}
+```
+
+1. `for` Esta es la manera mas abreviada de crear un bucle en javascript en el caso de while necesitasmos una variable contador, luego la condicion y finalmente el aumento del cnotador, en el caso de `for` estos tres pasos se realizan en una sola linea.
+```js
+for (let contador = 2; contador <= 20; contador++) {if (i % 2 == 0) {console.log(contador);}}
+```
+
+> [!TIP]
+> - `while` se usa cuando no sabemos la cantidad de veces que deseamos ejecutar un codigo, por lo general su finalizacion requerira una intervencion externa.
+> - `for` Se usa cuando sabemos la cantidad de veces que deseamos ejecutar 
+
+
+>[!NOTE]
+>Para terminar un bucle se hace uso de la palabra reservada `break`
