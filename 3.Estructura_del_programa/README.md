@@ -123,6 +123,23 @@ El metodo es conocido como `Window` como el metodo de ventana, este metodo es un
     console.log(`Tienes un descuento del 50% ${total_compra*0.50}`)
   }
   ```
+- ***Condicion multiple `switch`***
+Javascript dispone de una opcion para crear estructuras condicionales multiples este es el `switch` permite crear estructuras mas optimizadas para cubrir un amplio abanico de posibilidades. 
+Switch consume mucha memoria
+```js
+let edad=Number(prompt("Ingrese su edad"))
+switch(edad){
+  case 4:
+    console.log("Tienes 4 años")
+    break 
+  case 8:
+    console.log("Tienes 8 años")
+  default:
+    console.log("Tienes:",edad)
+    break
+}
+
+```
 
 ### Bucles 
 Consideremos el siguiente problema problema:

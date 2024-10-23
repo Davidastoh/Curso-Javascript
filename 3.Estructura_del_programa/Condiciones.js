@@ -54,24 +54,81 @@
    * - si su edad es mayor o igual a 18 años: te ganaras al primo.
    */
 
-let edad = Number(prompt("Introduce tu edad:"));
+// let edad = Number(prompt("Introduce tu edad:"));
 
-if (edad >= 4 && edad <= 8) {
-    console.log("Te ganaste un chupetín");
-} else if (edad >= 9 && edad <= 13) {
-    console.log("Te ganaste una pelota firmada por Cuto");
-} else if (edad >= 14 && edad <= 17) {
-    console.log("Te ganaste un celular Nokia 6101");
-} else if (edad >= 18  <=100) {
-    console.log("Te ganaste al primo");
-} else {
-    console.log("No tienes la edad necesaria");
+// if (edad >= 4 && edad <= 8) {
+//     console.log("Te ganaste un chupetín");
+// } else if (edad >= 9 && edad <= 13) {
+//     console.log("Te ganaste una pelota firmada por Cuto");
+// } else if (edad >= 14 && edad <= 17) {
+//     console.log("Te ganaste un celular Nokia 6101");
+// } else if (edad >= 18  <=100) {
+//     console.log("Te ganaste al primo");
+// } else {
+//     console.log("No tienes la edad necesaria");
+// }
+
+
+// let edad=Number(prompt("Ingrese su edad"))
+// switch(edad){
+//   case 4:
+//     console.log("Tienes 4 años")
+//     break 
+//   case 8:
+//     console.log("Tienes 8 años")
+//   default:
+//     console.log("Tienes:",edad)
+//     break
+// }
+
+
+
+// let edad= Number(prompt("Introduce tu edad:"));
+// switch (edad) {
+//     case (edad >= 4 && edad <= 8):
+//         console.log("Te ganaste un chupetín");
+//         break;
+//     case (edad >= 9 && edad <= 13) :
+//         console.log("Te ganaste una pelota firmada por Cuto");
+//         break;
+//     case (edad >= 14 && edad <= 17):
+//         console.log("Te ganaste un celular Nokia 6101");
+//         break;
+//     case (edad >= 18  <=100):
+//         console.log("Te ganaste al primo");
+//         break;
+//     default:
+//         console.log("No tienes la edad necesaria");
+//         break;
+// }
+
+
+//Ejercio
+//Realizar un programa que pida 5 Frutas atravez del navegador y relizara las siguientes evaluaciones:
+//Naranja,Limon --> "Es una fruta Citrica"
+//Platano,manzana --> "Es una fruta dulce"
+//Fresa,pera,papaya --> "Es una fruta para ensalada"
+//Y si ingresa otra fruta --> "No tiene clasificacion"
+
+
+for (let i = 1; i <= 5; i++) {
+    let fruta = prompt(`Introduce la fruta: ${i}`);
+    switch (fruta) {
+        case 'naranja':
+        case 'limón':
+            console.log(fruta,"es una fruta cítrica");
+            break;
+        case 'platano':
+        case 'manzana':
+            console.log(fruta, "es una fruta dulce");
+            break;
+        case 'fresa':
+        case 'pera':
+        case 'papaya':
+            console.log(fruta,"es una fruta para ensalada");
+            break;
+        default:
+            console.log(fruta,"no tiene clasificación");
+            break;
+    }
 }
-
-
-
-
-
-
-
-
