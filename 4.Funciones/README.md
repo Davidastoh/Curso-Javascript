@@ -9,7 +9,9 @@
     - [Funciones como valor](#funciones-como-valor)
     - [Funciones como declaracion](#funciones-como-declaracion)
   - [Funcion de flecha (arrow function)](#funcion-de-flecha-arrow-function)
-    - [Diferencias](#diferencias)
+  - [Diferencias](#diferencias)
+    - [Binding](#binding)
+  - [La pila de llamadas](#la-pila-de-llamadas)
 # Funciones 
 las  funcionnes en javascript `bloques de codigo ejecutable`, reutilizar a los que podemos pasar parametros parametetros y operar con ellos.
 Nos sirve para modular(Modularizar) nuestros programas de estructurarlos en bloquees que `realicen una tarea concreta`, de esta manera nuestro codigo es mas legible y mantenible.
@@ -147,4 +149,60 @@ let registroUsuario=(nombre,apellido)=>{
 console.log(registroUsuario("Edwin","Cachondo"))
 ```
 
-### Diferencias 
+## Diferencias 
+Las diferencias que tenemos al momento de crear una funcion declarativa, funcion como valor y flecha es `binding`.
+### Binding
+Es una tecnica que guarda las funciones y variables.
+(enlaces) sube al principio la declaracion , no el valor  a la cabecera del archivo javascript.
+```js
+despedida()
+function saludo(){
+    return "Hola"
+}
+function despedida(){
+    return "Adios"
+}
+```
+```js
+saludo()
+despedida()
+```
+
+## La pila de llamadas 
+Es una tecnica que se usa para controlar de manera correcta la ejecucion de una funcion.
+
+***Averiguar sobre LIFO***
+Alguritmo y estructura de de datos 
+
+LIFO significa "Last In, First Out" (último en entrar, primero en salir) y es un método utilizado en contabilidad y gestión de inventarios. En este enfoque, los artículos más recientes en ser añadidos a un inventario son los primeros en ser vendidos o utilizados.
+
+LIFO es un método de contabilidad y gestión de inventarios en el cual los últimos productos o artículos que ingresan al inventario son los primeros en ser vendidos o utilizados. Esto se aplica comúnmente en la contabilidad de costos y en la gestión de inventarios de empresas.
+
+```js
+//Programa que haga una ensalada
+function cortarTomate(){
+    console.log("Cortando tomates")
+}
+function cortarLechuga(){
+    console.log("Cortando lechugas")
+}
+function cortarPepino(){
+    console.log("Cortando pepino")
+}
+function cortarLimon(){
+    console.log("cortar Limon")
+}
+function prepararEnsalada(){
+    cortarTomate()
+    cortarLechuga()
+    cortarPepino()
+    cortarLimon()
+    console.log("Mezclar las verduras")
+}
+function comer(){
+    prepararEnsalada()
+    console.log("Comer la enssalada")
+}
+
+comer()
+```
