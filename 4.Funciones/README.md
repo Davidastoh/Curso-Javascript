@@ -13,6 +13,8 @@
     - [Binding](#binding)
   - [La pila de llamadas](#la-pila-de-llamadas)
   - [CLOSURE o funciones de cierre(funciones que retorna funciones)](#closure-o-funciones-de-cierrefunciones-que-retorna-funciones)
+    - [Closure de tipo clase](#closure-de-tipo-clase)
+    - [prototype (Tarea-Averiguar y sus ejemplos)](#prototype-tarea-averiguar-y-sus-ejemplos)
 # Funciones 
 las  funcionnes en javascript `bloques de codigo ejecutable`, reutilizar a los que podemos pasar parametros parametetros y operar con ellos.
 Nos sirve para modular(Modularizar) nuestros programas de estructurarlos en bloquees que `realicen una tarea concreta`, de esta manera nuestro codigo es mas legible y mantenible.
@@ -236,4 +238,36 @@ returnaValor(10)()
 ```
 >[!NOTE]
 > las funciones closure son usadas porque puden mantener el valor de sus enlaces o variables locales en todo el proceso de la ejecucion de su funcion padre, por cada llamada que se le realice.
-> 
+
+### Closure de tipo clase
+Son funciones cuyo uso son iguales a las clases dentro de la ejecucion de una clase tenemos lo que se llama como `instancia` en javascript tenemos funciones `closure` que se pueden instanciar al igual que una clase, la diferencia con las funciones `closure` clasicas, es que en esta hacemos uso de la palabra reservada `keyword` llama `this`.
+```js
+let contador=1
+function contador(){
+    this.contador=0
+    this.incre=function(){
+        this.contador++
+    }
+    this.incre=function(){
+        this.contador++
+    }
+    this.decre=function{
+        this.contador--
+    }
+}
+//realizamos la instancia
+let count1=new contador()
+count1.contador 
+for(let i=0;i<5;i++){
+    count1.incre()
+}
+
+```
+
+>[!NOTE]
+>la funcion closure de tipo clase no hace uso de `return` en sus funciones al hacer uso de `this` casa funcion variable estara anlazada al objeto que se cree.
+
+>[!WARNING]
+>El problema principal de este tipo de funcion es que cuando creamos un nuevo objeto a partir de la funcion tipo clase, reservar espacios en espacio para toda la clase y su valor creado eso quiere decir variable y funciones, cada vez que llamamos a una funcion esta se replica en memoria.
+
+### prototype (Tarea-Averiguar y sus ejemplos)
