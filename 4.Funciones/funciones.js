@@ -110,20 +110,44 @@
 
 
 
-function contador(){
-    this.contador=0
-    this.incre=function(){
-        this.contador++
-    }
-    this.incre=function(){
-        this.contador++
-    }
-    this.decre=function(){
-        this.contador--
-    }
+// function contador(){
+//     this.contador=0
+//     this.incre=function(){
+//         this.contador++
+//     }
+//     this.incre=function(){
+//         this.contador++
+//     }
+//     this.decre=function(){
+//         this.contador--
+//     }
+// }
+// //realizamos la instancia
+// let count1=new contador()
+// console.log(count1.contador)
+// count1.incre()
+// console.log(count1.contador)
+
+
+function Contador(nombre) {
+    this.count = 0;
+    this.nombre = nombre;
 }
-//realizamos la instancia
-let count1=new contador()
-console.log(count1.contador)
-count1.incre()
-console.log(count1.contador)
+
+Contador.prototype = {
+    incremento: function() { this.count++; },
+    decremento: function() { this.count--; },
+    mostrarDatos: function() { return `${this.count}, ${this.nombre}`; },
+    actualizaNombre: function(nuevoNombre) { this.nombre = nuevoNombre; } 
+}
+
+// Instanciar mi función
+let contadorUno = new Contador("El primo");
+console.log(contadorUno.mostrarDatos()); 
+contadorUno.incremento();
+console.log(contadorUno.mostrarDatos()); 
+// Cambiar el nombre
+contadorUno.incremento();
+contadorUno.actualizaNombre("Al primo le gusta Orlando");
+console.log(contadorUno.mostrarDatos()); 
+
