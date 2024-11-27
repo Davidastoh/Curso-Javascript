@@ -155,7 +155,27 @@ let suma = numeros.reduce(function(acumulador, numero) {
 console.log(suma); // 10
 ```
 ## Objetos
+Los objetos son tipos de datos estructurados similares a la lista, para poder acceder a un elemneto de la lista, javascript les asignaba indices, en este caso los ebjetos como una diferencia de las lista nosotros le podremos asignar el nombre del ellemneto al cual deseamos acceder, a este se le conoce como `clave:valor`.
+Cada clave:valor es un elementode un objeto si deseamos crear mas elementos tendermos que separarlos por comas `,` 
+### Creacion
+Para crear un objeto debemos encerrar los elemntos en llaves `{}` para cada elemneto estara conformado por su clave:valor
 
-### Creacion 
+```js
+let datosMax=["Max","Asto",20,"M"]
+let datosMaxObjeto={
+  nombre:"Max",
+  apellido:"Asto",
+  edad:20
+  sexo:"Todos los dias"
+  ganado:["El primo","Los chamos","Las enfermeras","Mineros"]
+  direccion:{
+    tipoCalle:"pasaje"
+    nombreCallle:"Querobamba"
+    numeroVivienda:222
+    numeroCuarto:5
+  }
+  accion:()=>{console.log("Hola soy Max")}
+}
+```
 ### Acceder a un elemento del objeto
 ### Metodos
