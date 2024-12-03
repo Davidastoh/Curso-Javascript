@@ -1,0 +1,15 @@
+/* .miClase{
+    background: red;
+    width: 500px;
+    height: 700px;
+} */
+.cuadro_rojo{
+    background: red;
+    width: 500px;
+    height: 700px;
+}
+.cuadro_azul{
+    background: blue;
+    width: 500px;
+    height: 700px;
+}
