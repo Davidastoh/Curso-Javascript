@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content:center ;
+}
+main{
+    background-color: aquamarine;
+    width: 60%;
+    padding: 3em;
+}
+.titulo{
+    text-align: center;
+}
+.contenido{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contenido>input{
+    height: 2em;
+    border-radius: 5px;
+}
+.contenido>button{
+    background-color: crimson;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-style: gold;
+    font-size: bold;
+}
+.contenido>button>span{
+    font-size: 15px;
+}
